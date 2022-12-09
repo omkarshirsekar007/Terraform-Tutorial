@@ -54,7 +54,7 @@ pipeline {
                }
            }
        }
-re
+
         stage('Apply') {
             steps {
                 bat "cd terraform/aws-instance-first-script ; terraform apply -input=false tfplan"
